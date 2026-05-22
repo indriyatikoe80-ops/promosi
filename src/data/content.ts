@@ -70,7 +70,7 @@ export const APP_DATA: AppData = {
   description: 'Aplikasi Belajar yang dirancang khusus untuk anak - anak berkebutuhan khusus',
   
   hero: {
-    badge: '🌟 Aplikasi Belajar #1 untuk Anak',
+    badge: 'Aplikasi Belajar #1 untuk Anak',
     title: 'Belajar Sambil Bermain, Cerdas Sejak Dini!',
     subtitle: 'Aplikasi belajar interaktif yang dirancang khusus untuk anak - anak berkebutuhan khusus. Dilengkapi animasi lucu dan suara yang membuat belajar jadi super seru!',
     ctaPrimary: 'Hubungi via Email',

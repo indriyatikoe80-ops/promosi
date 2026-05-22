@@ -15,7 +15,7 @@ const Footer = () => {
           {/* Logo & About */}
           <div>
             <span style={{ fontFamily: "'Fredoka One', cursive", color: 'var(--primary-400)', fontSize: '1.8rem', display: 'block', marginBottom: '1.5rem' }}>
-              🌟 {APP_DATA.appName}
+              <img src="/promosi/icon.png" alt="icon" style={{ width: '24px', height: '24px', verticalAlign: 'middle', marginRight: '8px' }} /> {APP_DATA.appName}
             </span>
             <p style={{ color: 'rgba(255,255,255,0.6)', lineHeight: '1.8' }}>
               {APP_DATA.footer.description}
