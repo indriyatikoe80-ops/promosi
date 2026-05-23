@@ -17,6 +17,7 @@ const Navbar = () => {
     { name: 'Beranda', href: '#hero' },
     { name: 'Fitur', href: '#features' },
     { name: 'Tampilan', href: '#screenshots' },
+    { name: 'Lisensi', href: '#pricing' },
     { name: 'Testimoni', href: '#testimonials' },
     { name: 'Download', href: '#download' },
   ];

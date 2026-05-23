@@ -48,6 +48,16 @@ export interface FooterData {
   };
 }
 
+export interface PricingTier {
+  id: string;
+  name: string;
+  price: string;
+  originalPrice: string;
+  duration: string;
+  isPopular?: boolean;
+  features: string[];
+}
+
 export interface AppData {
   appName: string;
   tagline: string;
@@ -59,6 +69,7 @@ export interface AppData {
   learningModules: { icon: string; title: string; desc: string }[];
   testimonials: Testimonial[];
   faqs: FAQItem[];
+  pricing: PricingTier[];
   download: DownloadData;
   footer: FooterData;
 }
@@ -117,9 +128,15 @@ export const APP_DATA: AppData = {
     },
     {
       icon: '🛡️',
-      title: 'Konten Aman',
-      desc: 'Semua konten dirancang khusus untuk anak-anak, bebas dari iklan dan konten tidak pantas.',
+      title: 'Konten Edukasi Aman',
+      desc: 'Semua materi dirancang khusus untuk anak-anak, aman dan menstimulasi perkembangan kognitif mereka.',
       color: 'var(--accent-teal)'
+    },
+    {
+      icon: '💎',
+      title: 'Opsi Bebas Iklan',
+      desc: 'Tersedia pilihan Lisensi Premium dengan harga terjangkau untuk pengalaman belajar 100% bebas gangguan iklan.',
+      color: 'var(--primary-500)'
     }
   ],
   
@@ -155,7 +172,7 @@ export const APP_DATA: AppData = {
   faqs: [
     {
       question: 'Apakah aplikasi ini gratis?',
-      answer: 'Ya, Aplikasi Belajar Anak sepenuhnya gratis untuk didownload dan digunakan. Tidak ada biaya tersembunyi!'
+      answer: 'Ya, Aplikasi Belajar Anak sepenuhnya gratis untuk diunduh dan semua modul dasar dapat dimainkan secara gratis (didukung oleh iklan yang aman untuk anak).'
     },
     {
       question: 'Berapa usia yang sesuai?',
@@ -163,11 +180,39 @@ export const APP_DATA: AppData = {
     },
     {
       question: 'Bisa offline?',
-      answer: 'Ya! Semua materi dan permainan bisa diakses offline setelah aplikasi diinstall.'
+      answer: 'Ya! Modul yang sudah dibuka dapat diakses tanpa koneksi internet (khusus versi Premium).'
     },
     {
-      question: 'Aman untuk anak?',
-      answer: 'Ya! Tidak ada iklan pihak ketiga, tidak ada akses internet tidak perlu, dan semua konten dirancang khusus untuk anak-anak.'
+      question: 'Bagaimana cara menghilangkan iklan?',
+      answer: 'Kami menyediakan Lisensi Premium di dalam aplikasi (pembelian satu kali atau berlangganan) yang akan menghapus seluruh iklan selamanya atau sesuai durasi yang dipilih.'
+    }
+  ],
+  
+  pricing: [
+    {
+      id: '1-bulan',
+      name: 'Paket 1 Bulan',
+      price: 'Rp 15.000',
+      originalPrice: 'Rp 35.000',
+      duration: '/ bulan',
+      features: ['Bebas dari semua iklan', 'Akses fitur premium', 'Bisa dimainkan offline', 'Batal kapan saja']
+    },
+    {
+      id: '6-bulan',
+      name: 'Paket 6 Bulan',
+      price: 'Rp 50.000',
+      originalPrice: 'Rp 120.000',
+      duration: '/ 6 bulan',
+      features: ['Bebas dari semua iklan', 'Akses fitur premium', 'Bisa dimainkan offline', 'Batal kapan saja', 'Lebih hemat!']
+    },
+    {
+      id: 'selamanya',
+      name: 'Paket Selamanya',
+      price: 'Rp 99.000',
+      originalPrice: 'Rp 250.000',
+      duration: 'Satu kali bayar',
+      isPopular: true,
+      features: ['Bebas dari semua iklan selamanya', 'Akses fitur premium selamanya', 'Bisa dimainkan offline selamanya', 'Lisensi berlaku seumur hidup']
     }
   ],
   
@@ -175,7 +220,7 @@ export const APP_DATA: AppData = {
     title: 'Mulai Petualangan Belajar Sekarang!',
     subtitle: 'Download Aplikasi Belajar Anak gratis sekarang dan berikan pengalaman belajar terbaik untuk si kecil!',
     buttonText: '📧 Hubungi via Email',
-    trustBadges: ['✅ 100% Gratis', '✅ Tanpa Iklan', '✅ Bisa Offline', '✅ Aman untuk Anak'],
+    trustBadges: ['✅ Gratis Diunduh', '✅ Opsi Premium Tanpa Iklan', '✅ Bisa Offline', '✅ Aman untuk Anak'],
   },
   
   footer: {
