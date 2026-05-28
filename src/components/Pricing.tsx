@@ -111,11 +111,20 @@ const Pricing = () => {
           ))}
         </div>
         
-        <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-          <p style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>
-            * Semua pembelian lisensi dilakukan aman langsung melalui menu pengaturan di dalam Aplikasi Belajar Anak.
-          </p>
-        </div>
+         <div style={{ textAlign: 'left', maxWidth: '800px', margin: '3rem auto', padding: '20px', background: 'var(--bg-card)', borderRadius: 'var(--radius-xl)', boxShadow: 'var(--shadow-md)' }}>
+           <h3 style={{ color: 'var(--text-primary)', marginBottom: '1.5rem' }}>Cara Memesan Lisensi Premium</h3>
+           <ol style={{ textAlign: 'left', lineHeight: '1.8', color: 'var(--text-secondary)', paddingLeft: '20px' }}>
+             <li><strong>Buka Aplikasi</strong> – Buka aplikasi “Aplikasi Belajar Anak” yang telah diunduh.</li>
+             <li><strong>Klik Tombol Hapus Iklan</strong> – Pada tampilan utama aplikasi, cari ikon atau tombol “Hapus Iklan” (biasanya berada di pojok kanan atas layar) dan klik.</li>
+             <li><strong>Login dengan Google</strong> – Aplikasi akan meminta login menggunakan akun Google untuk verifikasi identitas. Masukkan email dan sandi Google Anda.</li>
+             <li><strong>Pilih Paket Lisensi</strong> – Setelah login berhasil, Anda akan diarahkan ke halaman pilihan paket lisensi (1 Bulan, 6 Bulan, 1 Tahun). Pilih paket yang diinginkan.</li>
+             <li><strong>Pembayaran via Midtrans</strong> – Pilih metode pembayaran yang tersedia melalui Midtrans (transfer bank, e‑wallet, atau kartu kredit). Lengkapi detail pembayaran dan konfirmasi.</li>
+             <li><strong>Konfirmasi & Kirim Kode Lisensi</strong> – Setelah pembayaran berhasil, kode lisensi akan otomatis dikirim ke email terdaftar dan/atau WhatsApp Anda.</li>
+             <li><strong>Aktifkan Lisensi di Aplikasi</strong> – Klik tombol "Hapus Iklan" lagi, lalu login dengan Google kembali. Setelah login, masukkan kode lisensi yang diterima untuk mengaktifkan versi premium.</li>
+             <li><strong>Nikmati Akses Premium</strong> – Sekarang Anda dapat menikmati semua modul tanpa iklan, akses offline, dan laporan perkembangan lengkap.</li>
+           </ol>
+           <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', marginTop: '1rem' }}><em>Catatan:</em> Semua transaksi diproses secara aman melalui gateway pembayaran Midtrans.</p>
+         </div>
       </div>
       
       <style dangerouslySetInnerHTML={{ __html: `
