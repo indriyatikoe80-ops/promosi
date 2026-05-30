@@ -81,13 +81,14 @@ const Hero = () => {
           
           <div className="hero-buttons" style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
             <motion.a 
-              href="#download" 
+              href={APP_DATA.download.apkUrl}
+              download
               className="btn btn-primary"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               style={{ animation: 'pulse 2s infinite' }}
             >
-              📧 {APP_DATA.hero.ctaPrimary}
+              📥 {APP_DATA.hero.ctaPrimary}
             </motion.a>
             <motion.a 
               href="#features" 

@@ -36,6 +36,8 @@ export interface DownloadData {
   title: string;
   subtitle: string;
   buttonText: string;
+  emailButtonText: string;
+  apkUrl: string;
   trustBadges: string[];
 }
 
@@ -88,7 +90,7 @@ export const APP_DATA: AppData = {
     title: 'Belajar Sambil Bermain, Tumbuh Bersama!',
     subtitle:
       'Aplikasi belajar interaktif dengan 24 modul edukatif, dirancang khusus untuk anak-anak berkebutuhan khusus. Dilengkapi musik latar, animasi ceria, dan laporan perkembangan anak.',
-    ctaPrimary: 'Hubungi via Email',
+    ctaPrimary: 'Download APK Sekarang',
     ctaSecondary: 'Lihat Modul Belajar',
   },
 
