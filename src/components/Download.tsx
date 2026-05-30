@@ -19,22 +19,39 @@ const Download = () => {
           </p>
           
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
-            <motion.a 
-              href={`mailto:${APP_DATA.email}?subject=Permintaan%20Aplikasi%20Belajar%20Anak`}
-              className="btn btn-primary" 
+            <motion.a
+              href={APP_DATA.download.apkUrl}
+              download
+              className="btn btn-primary"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              style={{ 
-                fontSize: '1.25rem', 
+              style={{
+                fontSize: '1.25rem',
                 padding: '20px 50px',
-                animation: 'pulse 2s infinite'
+                animation: 'pulse 2s infinite',
               }}
             >
               {APP_DATA.download.buttonText}
             </motion.a>
-            
+
+            <motion.a
+              href={`mailto:${APP_DATA.email}?subject=Permintaan%20Aplikasi%20Belajar%20Anak`}
+              className="btn btn-secondary"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              style={{
+                fontSize: '1.25rem',
+                padding: '20px 50px',
+                border: '2px solid white',
+                color: 'white',
+                background: 'transparent',
+              }}
+            >
+              {APP_DATA.download.emailButtonText}
+            </motion.a>
+
             <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.9rem' }}>
-              *Kirim email untuk meminta link download aplikasi
+              *Klik tombol di atas untuk download APK langsung, atau kirim email jika ingin minta link.
             </p>
           </div>
           
